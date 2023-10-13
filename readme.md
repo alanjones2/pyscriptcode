@@ -1,1 +1,1 @@
-## PySript Code
+## PyScript Code
