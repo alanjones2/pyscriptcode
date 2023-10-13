@@ -1,0 +1,6 @@
+packages = [ "pandas", "plotly",]
+name = "Data Viz with Plotly"
+
+[[fetch]]
+from = "https://raw.githubusercontent.com/alanjones2/GISS/main/data/GLB.Ts%2BdSST.csv"
+to_file = "./globaltemp.csv"

@@ -1,0 +1,10 @@
+packages = [ "pandas", "plotly",]
+
+
+[[fetch]]
+from = "https://raw.githubusercontent.com/alanjones2/CO2/master/data/world_df.csv"
+to_file = "./hadcrutworld.csv"
+
+[[fetch]]
+from = "https://raw.githubusercontent.com/alanjones2/GISS/main/data/GLB.Ts%2BdSST.csv"
+to_file = "./globaltemp.csv"

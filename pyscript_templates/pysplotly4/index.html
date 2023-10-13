@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title id="title"></title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://pyscript.net/latest/pyscript.css" />
+  <script defer src="https://pyscript.net/latest/pyscript.js"></script>
+
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+  <div class="container">
+    <!-- include the pyscript files -->
+    <py-config src="./pyconfig.toml"></py-config>
+    <py-script src="./main.py"></py-script>
+
+    <header class="p-4 bg-secondary text-white">
+      <h1 id="header"></h1>
+      <h2 id="subheader" class="lead"></h2>
+    </header>
+
+    <div class="row">
+      <div class="col p-2">
+        <div id="chart1"></div>
+      </div>      
+      <div class="col p-2">
+          <div id="chart2"></div>
+      </div>
+      <div id="description"></div>
+    </div>
+
+  
+  </div>
+  <script type='text/javascript'>
+    function plot(graph, chart) {
+      var figure = JSON.parse(graph)
+      Plotly.newPlot(chart, figure, {});
+    }
+
+  </script>
+
+
+  <!-- Boostrap and Plotly JS libraries-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src='https://cdn.plot.ly/plotly-latest.min.js' crossorigin="anonymous"></script>
+</body>
+
+</html>
