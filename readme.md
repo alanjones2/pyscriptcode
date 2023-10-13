@@ -2,7 +2,7 @@
 
 ### Contents
 
-- pyscript_templates: HTML templates to accompany an article about data visualisation with PyScript
+- [pyscript_templates](./pyscript_templates/): HTML templates to accompany an article about data visualisation with PyScript
 
 
 
