@@ -1,6 +1,6 @@
 ## PyScript templates
 
-This folder contains the templates and code referred to the Medium article [Data Visualization on the Web with Plotly and PyScript]() - link TBA
+This folder contains the templates and code referred to the Medium article [Data Visualization on the Web with Plotly and PyScript](https://medium.com/codefile/data-visualization-on-the-web-with-plotly-and-pyscript-a30392f1257a?sk=e7347ececc7e04953cc5633134caa3f8) - _no paywall with this link_
 
 The folders demonstrate different applications of a single template and simple modications to the original template:
 
